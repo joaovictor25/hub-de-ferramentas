@@ -1,0 +1,158 @@
+.hero_pages{
+    width: 100%;
+    height: auto;
+    background-color: #FBE0D7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hero_pages_center{
+    margin-top: 100px;
+    margin-bottom: 80px;
+    max-width: 100%;
+    width: 1300px;
+    display: flex;
+    gap: 100px;
+    padding: 40px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+
+.left, .right {
+    flex: 1;
+}
+.number_phone{
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.code{
+    flex: 1;
+}
+.number{
+    flex: 4;
+}
+
+.green {
+    color: #25D366;
+}
+
+/* Inputs */
+label {
+    display: block;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.input, select, .textarea {
+    width: 100%;
+    padding: 14px;
+    margin-top: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background: #fff;
+    outline: none;
+}
+
+.textarea {
+    height: 160px;
+    resize: none;
+}
+
+/* Botão */
+.btn {
+    margin-top: 12px;
+    background: #eef3ff;
+    border: none;
+    padding: 12px 18px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Right Column */
+.top-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.top-buttons button {
+    flex: 1;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #dcdcdc;
+    background: #fff;
+    cursor: pointer;
+}
+
+.top-buttons .active {
+    background: #e8efff;
+    border-color: #b6c7ff;
+}
+
+/* Phone mockup */
+.phone {
+    margin-top: 30px;
+    width: 350px;
+    height: 650px;
+    background: #fff;
+    border-radius: 40px;
+    border: 12px solid #000;
+    position: relative;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.status {
+    background: #075E54;
+    color: #fff;
+    padding: 16px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.conversation {
+    background: #ece5dd;
+    height: calc(100% - 60px);
+    padding: 20px;
+}
+
+.msg-text {
+    background: #dcf8c6;
+    width: max-content;
+    padding: 10px 14px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+
+
+/* ============================
+   RESPONSIVO - TABLET (até 992px)
+   ============================ */
+@media (max-width: 992px) {
+
+.hero_pages_center{
+    display: flex;
+    flex-direction: column;
+}
+}
+
+/* ============================
+   RESPONSIVO - MOBILE (até 600px)
+   ============================ */
+@media (max-width: 600px) {
+.hero_pages_center{
+    display: flex;
+    flex-direction: column;
+}
+}

@@ -1,0 +1,173 @@
+/*Menu do topo*/
+.header_nav{
+    padding: 10px 0 10px 0;
+    z-index: 999999!important;
+    max-width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FBE0D7;
+}
+.header_nav_center{
+    max-width: 100%;
+    width: 1300px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header_nav_center .logo img{
+    width: 200px;
+    height: auto;
+}
+.header_nav_center .logo{
+    height: auto;
+
+}
+.nav_menu{
+    display: flex;
+    align-items: center;
+}
+.nav_menu ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+.nav_menu ul li a{
+    color: #000;
+    text-decoration: none;
+}
+
+/* ===========================
+   MOBILE & TABLET
+   =========================== */
+@media (max-width: 992px) {
+    /* --- MENU OFFCANVAS --- */
+    .nav_menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        height: 100vh;
+        background-color: #ffffff;
+        padding: 30px 10px;
+        transition: right .35s ease-in-out;
+        z-index: 999999;
+        display: flex;
+        flex-direction: column;
+        box-shadow: -2px 0 20px rgba(0,0,0,0.12);
+    }
+
+    .nav_menu.active {
+        right: 0;
+    }
+
+    /* --- BOTÃO MOBILE (Hambúrguer / X) --- */
+    .menu_mobile_btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 6px;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        z-index: 1000000;
+        transition: .3s ease;
+    }
+
+    .menu_mobile_btn span {
+        width: 28px;
+        height: 3px;
+        background-color: #000;
+        border-radius: 10px;
+        transition: 0.35s ease;
+        position: relative;
+    }
+
+    /* --- TRANSFORMAR EM X QUANDO MENU ABRE --- */
+    .menu_mobile_btn.active span:nth-child(1) {
+        transform: rotate(45deg) translate(6px, 6px);
+    }
+
+    .menu_mobile_btn.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu_mobile_btn.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
+
+    /* --- LISTA DO MENU --- */
+    .nav_menu nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .nav_menu nav ul li a {
+        text-decoration: none;
+        color: #000;
+        font-size: 19px;
+        font-weight: 500;
+        padding: 10px 0;
+        display: block;
+        transition: .2s;
+    }
+
+    .nav_menu nav ul li a:hover {
+        opacity: .6;
+    }
+}
+
+/* Ocultar botão mobile no desktop */
+@media (min-width: 993px) {
+    .menu_mobile_btn {
+        display: none !important;
+    }
+}
+
+
+
+
+/*******Footer*******/
+.footer{
+    width: 100%;
+    background-color: #302F3B;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.footer_center{
+    max-width: 100%;
+    width: 1300px;
+    padding: 80px 0 80px 0;
+    display: flex;
+    justify-content: space-between;
+     gap: 50px;
+}
+.footer_col{
+    flex: 1;
+}
+
+.footer_info{
+    height: 60px;
+    width: 100%;
+    background-color: #191822;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer_info_center{
+    max-width: 100%;
+    width: 1300px;
+    display: flex;
+    justify-content: space-between;
+}
