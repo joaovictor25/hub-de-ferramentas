@@ -1,9 +1,14 @@
+<div class="whatsapp">
+    <img src="assets/images/whatsapp.png" width="60px" alt="Icone do whatsapp" onclick="botaoWhatsapp()">
+    <audio id="audioClick" src="assets/audio/click.mp3"></audio>
+</div>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code To Code</title>
+    <link rel="icon" href="favicon.png">
     <link rel="stylesheet" type="text/css" href="assets/css/header-footer.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/index.css"/>
@@ -17,11 +22,11 @@
         <!--Menu de navegação e logo-->
         <header class="header_nav">
             <div class="header_nav_center">
-                <!-- LOGO -->
-                <div class="logo">
-                    <img src="assets/images/logotipo.png" alt="JV Converte">
-                </div>
-
+                <a href="index.html">
+                    <div class="logo">
+                        <img src="assets/images/logotipo.png" alt="Logo da Code To Code">
+                    </div>
+                </a>
                 <!-- BOTÃO MOBILE (HAMBURGER) -->
                 <div class="menu_mobile_btn" id="menuToggle">
                     <span></span>
@@ -65,27 +70,27 @@
                 <h2>Todas as ferramentas</h2>
                 <div class="container_card">
                     <a href="page-speed.html">
-                            <img src="assets/images/speed-radar.png" alt=""/>
+                            <img src="assets/images/speed-radar.png" alt="Medidor de velocidade"/>
                             <h3>PageSpeed</h3>
-                            <p>Lorem Ipsumis simply dummy text of the printing and typesetting industry</p>
+                            <p>Melhore o desempenho da sua landing page.</p>
                     </a>
                     
                     <a href="whatsapp-link.html">
-                        <img src="assets/images/link.png" alt=""/>
+                        <img src="assets/images/link.png" alt="Link do whatsapp"/>
                         <h3>WhatsApp Link</h3>
-                        <p>Lorem Ipsumis simply dummy text of the printing and typesetting industry</p>
+                        <p>Gere links para WhatsApp.</p>
                     </a>
 
                     <a href="encurtador-de-url.html">
-                        <img src="assets/images/link (1).png" alt=""/>
+                        <img src="assets/images/link (1).png" alt="Encurtador de link"/>
                         <h3>Encurtador de URL</h3>
-                        <p>Lorem Ipsumis simply dummy text of the printing and typesetting industry</p>
+                        <p>Gere URLs amigaveis para usar em suas campanhas.</p>
                     </a>
                     
                     <a href="otimizar-imagens.html">
-                        <img src="assets/images/generative-image.png" alt=""/>
+                        <img src="assets/images/generative-image.png" alt="Compactar imagens"/>
                         <h3>Otimizar Imagens</h3>
-                        <p>Lorem Ipsumis simply dummy text of the printing and typesetting industry</p>
+                        <p>Otimize as imagens para melhorar o desempenho da página.</p>
                     </a>
                 </div>
             </div>
@@ -127,41 +132,23 @@
         <section class="secao">
             <div class="secao_center">
                 <div class="secao_text">
-                    <h2>Sobre nós</h2>
-                    <p>A nossa plataforma nasceu com um objetivo simples: otimizar ainda mais o desenvolvimento de sites. Reunimos ferramentas essenciais em um só lugar para ajudar desenvolvedores, designers e profissionais de marketing a trabalharem mais rápido e com mais eficiência. Aqui você encontra praticidade, desempenho e soluções que realmente fazem diferença no dia a dia.</p>
+                    <h2>Sobre a plataforma</h2>
+                    <p>A nossa plataforma foi criada para facilitar o seu dia a dia no desenvolvimento de sites. Reunimos, em um só lugar, as ferramentas que você precisa para trabalhar com mais rapidez, eficiência e qualidade. Seja você desenvolvedor, designer ou profissional de marketing, aqui você encontra praticidade, desempenho e soluções que realmente fazem diferença no seu fluxo de trabalho.</p>
                 </div>
-                            <div class="secao_video">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/5RUuTIIn51Q?si=_dINk1RP035vu8UZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="secao_video">
+                    <video controls width="100%" preload="metadata" playsinline>
+                        <source src="assets/video/animacao-logo.mp4" type="video/mp4">
+                    </video>
                 </div>
             </div>
         </section>
     </div>
     <script src="assets/js/script.js"></script>
     <footer class="footer">
-        <!--
-        <div class="footer_center">
-            <div class="footer_col">
-                <img src="" alt=""/>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ipsum is simply dummy text of the printing and typesetting industry. L</p>
-            </div>
-
-            <div class="footer_col">
-                <h3>Links úteis</h3>
-            </div>
-            <div class="footer_col">
-                <h3>Contato</h3>
-            </div>
-        </div>
-        -->
         <div class="footer_info">
             <div class="footer_info_center">
-                <!--
-                <div class="footer_left">
-                    Politica de privacidade | Politica de cookies
-                </div>
-                -->
                 <div class="footer_right">
-                    Desenvolvido por João Victor
+                    All rights reserved.
                 </div>
             </div>
         </div>

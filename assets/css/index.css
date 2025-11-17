@@ -8,8 +8,6 @@
     background-position: bottom center;
     display: flex;
     justify-content: center;
-
-
 }
 .hero_center{
     max-width: 100%;
@@ -20,7 +18,6 @@
 }
 .hero_text{
     width: 50%;
-
 }
 .hero_text h1{
     font-size: 50px;
@@ -38,6 +35,7 @@
     text-decoration: none;
 }
 .hero_text button{
+    font-weight: 600;
     cursor: pointer;
     border-radius: 100px;
     background-color: #F16334;
@@ -63,7 +61,7 @@
     margin-top: -70px;
 }
 
-/*Beneficios*/
+/*Ferramentas*/
 .ferramentas{
     width: 100%;
     height: auto;
@@ -76,13 +74,18 @@
     max-width: 100%;
     width: 1300px;
 }
+.ferramentas_center h2{
+    text-align: center;
+}
 .container_card{
     padding: 15px 0 0 0;
     display: flex;
     justify-content: space-between;
     gap: 20px;
 }
-
+.container_card p{
+    font-size: 16px!important;
+}
 .container_card a{
     text-decoration: none;
     color: #000;
@@ -93,14 +96,17 @@
     padding: 30px 40px;
     flex: 1;
     border-radius: 20px;
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    border: 1px solid #eee;
+    transition: all .3s ease;
 }
 .container_card a:hover{
-    box-shadow: 0 4px 40px rgba(0, 0, 0, 0.10);
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.10);
+    border-color: #ddd;
 }
 
-/******sobre*******/
+/******Beneficios*******/
 .beneficios{
     width: 100%;
     display: flex;
@@ -118,7 +124,6 @@
      gap: 50px;
      
 }
-
 .beneficios_image{
     max-width: 100%;
     width: 300px;
@@ -131,7 +136,6 @@
 .beneficios_text h2{
     margin-bottom: 20px;
 }
-
 .beneficios_text ul {
     list-style: none;
     padding: 0;
@@ -159,7 +163,7 @@
 }
 
 
-/*Não definido*/
+/*Sobre*/
 .secao{
     width: 100%;
     display: flex;
@@ -175,13 +179,21 @@
      gap: 50px;
      
 }
+.secao_text{
+    flex: 1;
+}
 .secao_video{
+    flex: 1;
     border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    border: 1px solid #eee;
+}
+.secao_video iframe{
+    width: 100%;
 }
 
-/* ============================
-   RESPONSIVO - TABLET (até 992px)
-   ============================ */
+/*RESPONSIVO - TABLET (até 992px)*/
 @media (max-width: 992px) {
 
     /* HERO */
@@ -239,7 +251,6 @@
     .beneficios_image, .beneficios_text {
         width: 100%;
     }
-
     .beneficios_text ul li {
         text-align: left;
     }
@@ -256,9 +267,7 @@
     }
 }
 
-/* ============================
-   RESPONSIVO - MOBILE (até 600px)
-   ============================ */
+/*RESPONSIVO - MOBILE (até 600px)*/
 @media (max-width: 600px) {
 
     /* HERO */
@@ -278,10 +287,6 @@
         width: 250px !important;
         height: 250px !important;
     }
-
-    /* CARDS */
-
-
     /* BENEFICIOS */
     .beneficios_img img{
         width: 300px;

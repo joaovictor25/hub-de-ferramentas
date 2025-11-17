@@ -7,3 +7,9 @@ document.addEventListener("DOMContentLoaded", () => {
         toggleBtn.classList.toggle("active");
     });
 });
+
+  function botaoWhatsapp() {
+    const audio = document.getElementById("audioClick");
+    audio.currentTime = 0; 
+    audio.play();
+  }
